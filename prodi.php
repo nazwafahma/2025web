@@ -45,7 +45,10 @@ include "template/sidebar.php"
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
-                        <!-- /.card-header -->
+                        <div class="card-header ">
+                            <h3 class="card-title">Data Prodi</h3>
+                            <a href="tambahprodi.php" class="btn btn-primary float-end">Tambah</a>
+                        </div>
                         <div class="card-body">
                             <table class="table table-bordered">
                                 <thead>
@@ -66,7 +69,7 @@ include "template/sidebar.php"
                                             <td><?php echo $d["nama"] ?></td>
                                             <td><?php echo $d["kaprodi"] ?></td>
                                             <td><?php echo $d["jurusan"] ?></td>
-                                            <td><a href="deleteprodi.php?id=<?= $d['id']; ?>" onclick="return confirm('Yakin ingin hapus?')" class="btn btn-danger">Delete</a>  <a href="editprodi.php?id=<?= $d['id']; ?>" class="btn btn-warning">Edit</a></td>
+                                            <td><a href="deleteprodi.php?id=<?= $d['id']; ?>" onclick="return confirm('Yakin ingin hapus?')" class="btn btn-danger">Delete</a> <a href="editprodi.php?id=<?= $d['id']; ?>" class="btn btn-warning">Edit</a></td>
                                         </tr>
                                     <?php endforeach; ?>
 
